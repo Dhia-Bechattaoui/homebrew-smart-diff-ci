@@ -1,20 +1,20 @@
 class SmartDiffCi < Formula
   desc "Blazing fast, language-agnostic Test Impact Analyzer"
   homepage "https://github.com/dhia-bechattaoui/smart-diff-ci"
-  version "0.1.1"
+  version "0.1.3"
   license "MIT"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/dhia-bechattaoui/smart-diff-ci/releases/download/v0.1.1/smart-diff-ci-aarch64-apple-darwin.tar.gz"
-      sha256 "7d2b79677f6d6f1eaac76805010c38b55d7db5e017e6573d74a8c318462a767e"
+      url "https://github.com/dhia-bechattaoui/smart-diff-ci/releases/download/v0.1.3/smart-diff-ci-aarch64-apple-darwin.tar.gz"
+      sha256 "3868f45caba7f5994059f2d7be21dcc0b2800407f0da67e2a8bfd70bb779cf0e"
     else
-      url "https://github.com/dhia-bechattaoui/smart-diff-ci/releases/download/v0.1.1/smart-diff-ci-x86_64-apple-darwin.tar.gz"
-      sha256 "c29c5ef46c921fd68a32a7169d494cc7bd6f76302d10217be0115f27db00f88c"
+      url "https://github.com/dhia-bechattaoui/smart-diff-ci/releases/download/v0.1.3/smart-diff-ci-x86_64-apple-darwin.tar.gz"
+      sha256 "7f4d9bfaee227922b275fb609b6da7ad592782ba0b11202bd4adb4117296b793"
     end
   elsif OS.linux?
-    url "https://github.com/dhia-bechattaoui/smart-diff-ci/releases/download/v0.1.1/smart-diff-ci-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "2fe7920b9c428b3f34b9c902d9d461f96d0b1e5b9f262858c1425fc365b89286"
+    url "https://github.com/dhia-bechattaoui/smart-diff-ci/releases/download/v0.1.3/smart-diff-ci-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "19f0b998996c2a8df8c936ccdc3f614753a824ac120d440450ebc919bb3e2c79"
   end
 
   def install
